@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o4Q-iY-B1t">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WPD-Cy-mrh">
+            <objects>
+                <viewController id="o4Q-iY-B1t" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tfn-Zb-3ln"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAu-Nz-ADc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="369-mS-PLc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alF-Tv-gcD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LN1-Qf-eLP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png" translatesAutoresizingMaskIntoConstraints="NO" id="AOl-r9-Pgx">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_os7" translatesAutoresizingMaskIntoConstraints="NO" id="pNh-KN-YrT">
+                                        <rect key="frame" x="265" y="66" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="lfo-L3-86m"/>
+                                            <constraint firstAttribute="height" constant="70" id="mNM-hL-VLi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.7505706781" blue="0.213579608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AOl-r9-Pgx" secondAttribute="bottom" id="JKu-z4-okz"/>
+                                    <constraint firstAttribute="height" constant="200" id="N08-mT-eDR"/>
+                                    <constraint firstItem="AOl-r9-Pgx" firstAttribute="leading" secondItem="LN1-Qf-eLP" secondAttribute="leading" id="XLn-hc-vgJ"/>
+                                    <constraint firstItem="pNh-KN-YrT" firstAttribute="centerX" secondItem="LN1-Qf-eLP" secondAttribute="centerX" id="ZXp-MA-G6b"/>
+                                    <constraint firstItem="AOl-r9-Pgx" firstAttribute="top" secondItem="LN1-Qf-eLP" secondAttribute="top" id="axk-lO-9uq"/>
+                                    <constraint firstAttribute="trailing" secondItem="AOl-r9-Pgx" secondAttribute="trailing" id="tYu-wj-ICE"/>
+                                    <constraint firstAttribute="bottom" secondItem="pNh-KN-YrT" secondAttribute="bottom" constant="64" id="vxx-Im-2an"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwV-gr-56s">
+                                <rect key="frame" x="0.0" y="200" width="600" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.7505706781" blue="0.213579608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="28s-By-vM3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BwV-gr-56s" secondAttribute="trailing" id="CGf-O7-ifV"/>
+                            <constraint firstItem="BwV-gr-56s" firstAttribute="leading" secondItem="369-mS-PLc" secondAttribute="leading" id="D8a-3e-lrD"/>
+                            <constraint firstItem="tAu-Nz-ADc" firstAttribute="top" secondItem="alF-Tv-gcD" secondAttribute="bottom" id="HoO-Nf-TU3"/>
+                            <constraint firstItem="LN1-Qf-eLP" firstAttribute="top" secondItem="tfn-Zb-3ln" secondAttribute="bottom" constant="-20" id="Pzv-Aa-UTP"/>
+                            <constraint firstItem="LN1-Qf-eLP" firstAttribute="leading" secondItem="369-mS-PLc" secondAttribute="leading" id="Tu1-eI-bcc"/>
+                            <constraint firstAttribute="trailing" secondItem="LN1-Qf-eLP" secondAttribute="trailing" id="Ukd-Ie-hwu"/>
+                            <constraint firstItem="BwV-gr-56s" firstAttribute="top" secondItem="LN1-Qf-eLP" secondAttribute="bottom" id="d9B-9L-j0p"/>
+                            <constraint firstAttribute="trailing" secondItem="alF-Tv-gcD" secondAttribute="trailing" id="eJC-9m-WVf"/>
+                            <constraint firstItem="alF-Tv-gcD" firstAttribute="leading" secondItem="369-mS-PLc" secondAttribute="leading" id="nJI-jP-vgV"/>
+                            <constraint firstItem="LN1-Qf-eLP" firstAttribute="top" secondItem="369-mS-PLc" secondAttribute="top" id="ohU-Q4-i1g"/>
+                            <constraint firstItem="alF-Tv-gcD" firstAttribute="top" secondItem="369-mS-PLc" secondAttribute="top" id="qsi-e9-PFx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2h2-To-4zW"/>
+                    <connections>
+                        <outlet property="headConstrsint" destination="N08-mT-eDR" id="b1O-5J-ul5"/>
+                        <outlet property="headView" destination="LN1-Qf-eLP" id="CTA-wP-g8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62S-bd-Ot0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11" y="247"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_os7" width="60" height="60"/>
+        <image name="png" width="355" height="220"/>
+    </resources>
+</document>

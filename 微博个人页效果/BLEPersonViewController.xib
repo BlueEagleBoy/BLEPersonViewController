@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLEPersonViewController">
+            <connections>
+                <outlet property="cardViewHeightConstraint" destination="hN1-zC-Ifc" id="kje-lI-NJu"/>
+                <outlet property="contentView" destination="7hb-Sc-BQf" id="ST3-JC-gn5"/>
+                <outlet property="personCardView" destination="HvA-So-6DI" id="UpI-3S-tCB"/>
+                <outlet property="personIconView" destination="7ia-bR-H0b" id="fpy-am-uoH"/>
+                <outlet property="tabBar" destination="toe-zY-qAu" id="4TX-Ua-qzd"/>
+                <outlet property="view" destination="8Vs-4I-Tfo" id="kWq-aR-SQy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Vs-4I-Tfo">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="442"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hb-Sc-BQf" userLabel="子视图ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="266" height="442"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-ab-xfc" userLabel="头部视图View">
+                    <rect key="frame" x="0.0" y="0.0" width="266" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HvA-So-6DI">
+                            <rect key="frame" x="0.0" y="0.0" width="266" height="200"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ia-bR-H0b">
+                            <rect key="frame" x="98" y="66" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="NsW-7S-nQt"/>
+                                <constraint firstAttribute="width" constant="70" id="eul-uq-RS3"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7ia-bR-H0b" secondAttribute="bottom" constant="64" id="A5c-Ty-rqx"/>
+                        <constraint firstAttribute="bottom" secondItem="HvA-So-6DI" secondAttribute="bottom" id="LNw-6u-r4a"/>
+                        <constraint firstItem="HvA-So-6DI" firstAttribute="leading" secondItem="4hc-ab-xfc" secondAttribute="leading" id="PmL-XS-Oxc"/>
+                        <constraint firstItem="HvA-So-6DI" firstAttribute="top" secondItem="4hc-ab-xfc" secondAttribute="top" id="QL2-MM-Ig8"/>
+                        <constraint firstItem="7ia-bR-H0b" firstAttribute="centerX" secondItem="4hc-ab-xfc" secondAttribute="centerX" id="XRR-Mk-EDl"/>
+                        <constraint firstAttribute="trailing" secondItem="HvA-So-6DI" secondAttribute="trailing" id="XtA-sm-jhC"/>
+                        <constraint firstAttribute="height" constant="200" id="hN1-zC-Ifc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toe-zY-qAu" userLabel="选项视图View">
+                    <rect key="frame" x="0.0" y="200" width="266" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.7505706781" blue="0.213579608" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aIV-Re-9IC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4hc-ab-xfc" secondAttribute="trailing" id="65z-0Z-Ytq"/>
+                <constraint firstItem="toe-zY-qAu" firstAttribute="top" secondItem="4hc-ab-xfc" secondAttribute="bottom" id="DsK-b0-hMx"/>
+                <constraint firstItem="7hb-Sc-BQf" firstAttribute="top" secondItem="8Vs-4I-Tfo" secondAttribute="top" id="FdL-6A-qHw"/>
+                <constraint firstItem="7hb-Sc-BQf" firstAttribute="leading" secondItem="8Vs-4I-Tfo" secondAttribute="leading" id="H0K-ps-ufZ"/>
+                <constraint firstItem="toe-zY-qAu" firstAttribute="leading" secondItem="8Vs-4I-Tfo" secondAttribute="leading" id="TOQ-0H-a1p"/>
+                <constraint firstItem="4hc-ab-xfc" firstAttribute="leading" secondItem="8Vs-4I-Tfo" secondAttribute="leading" id="Yh6-Lj-Te8"/>
+                <constraint firstAttribute="trailing" secondItem="7hb-Sc-BQf" secondAttribute="trailing" id="f1B-kL-0B7"/>
+                <constraint firstAttribute="trailing" secondItem="toe-zY-qAu" secondAttribute="trailing" id="spe-k4-X9a"/>
+                <constraint firstItem="4hc-ab-xfc" firstAttribute="top" secondItem="8Vs-4I-Tfo" secondAttribute="top" id="uM3-Ej-ucQ"/>
+                <constraint firstAttribute="bottom" secondItem="7hb-Sc-BQf" secondAttribute="bottom" id="xCH-0I-0iA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-451" y="638"/>
+        </view>
+    </objects>
+</document>
